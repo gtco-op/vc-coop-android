@@ -1,6 +1,8 @@
 #include <jni.h>
 #include "main.h"
 
+bool InitGameLibrary();
+
 jint JNI_OnLoad(JavaVM *vm, void* reserved)
 {
 	if(InitGameLibrary())
